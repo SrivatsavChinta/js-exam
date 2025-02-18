@@ -1,0 +1,83 @@
+:root {
+    /* colors */
+    --color-1: red;
+    --color-2: blue;
+    --color-3: green;
+    --background-color-1: #A9A9A9;
+    --background-color-2: #F0F0F0;
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    height: 100vh;
+    width: 90%;
+    padding: 2rem;
+    margin: 5rem;
+    background: var(--background-color-1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.to-do,
+.in-progress,
+.done {
+    height: 100%;
+    width: 25%;
+    background: var(--background-color-2);
+    overflow: scroll;
+}
+
+.box-tag {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.card {
+    width: 90%;
+    height: auto;
+    background: var(--white);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: #A9A9A9;
+}
+
+.task-input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.task-text{
+    height: 100%;
+    width: 70%;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.task-button {    
+    height: 100%;
+    width: 20%;
+    font-size: 1rem;
+}
+
+.count {
+    width: 3rem;
+    height: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--background-color-1);
+    margin-left: 1rem;
+}
+
+/* classlist to be added later */
+.dragging {
+    scale: 1;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="to-do container">
+            <p class="box-tag">To Do <span class="count">4</span></p>
+
+            <form class="task-form">
+                <input type="text" placeholder="enter task" class="task-text">
+                <button type="submit" class="task-button">+</button>
+            </form>
+
+            <p class="card" draggable="true">
+                Task 1
+            </p>
+
+            <p class="card" draggable="true">
+                Task 2
+            </p>
+
+            <p class="card" draggable="true">
+                Task 3
+            </p>
+
+            <p class="card" draggable="true">
+                Task 4
+            </p>
+        </div>
+
+        <div class="in-progress container">
+            <p class="box-tag">In Progress <span class="count">0</span></p>
+        </div>
+
+        <div class="done container">
+            <p class="box-tag">Done <span class="count">0</span></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
